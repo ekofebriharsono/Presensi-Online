@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Damartana</string>
+    <string name="masuk">Masuk</string>
+    <string name="masuk_large">Selamat Datang \n di presensi damartana mobile</string>
+    <string name="kehadiran">Kehadiran</string>
+    <string name="kehadiran_large">KEHADIRAN</string>
+    <string name="nip">Nip</string>
+    <string name="nip_larga">NIP</string>
+    <string name="berikutnya">Berikutnya . .</string>
+    <string name="ingat_nip">Ingat NIP</string>
+    <string name="ingat_password">Ingat Password</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="nama">Nama</string>
+    <string name="scan">Scan QR-Code</string>
+    <string name="pilih">Pilih</string>
+    <string name="hadir">Hadir</string>
+    <string name="pulang">Pulang</string>
+    <string name="cek_data">CEK DATA</string>
+    <string name="waktu">Waktu</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="lokasi">Lokasi</string>
+    <string name="submit">Submit</string>
+    <string name="logout">Logout</string>
+    <string name="save_to_gallery">Save image to gallry</string>
+    <string name="thanks">Terima Kasih <b>Eko Febri Harsono</b> telah melakukan presensi pada hari ini. </string>
+    <string name="title_activity_maps">Map</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+</resources>

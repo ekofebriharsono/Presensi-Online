@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "383684106427",
+    "firebase_url": "https://presensi-b0ede.firebaseio.com",
+    "project_id": "presensi-b0ede",
+    "storage_bucket": "presensi-b0ede.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383684106427:android:75292bb10a83b559",
+        "android_client_info": {
+          "package_name": "com.maseko.root.absen1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "383684106427-pbhjj3j7eoa563rktpuvieaf3tuatt87.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.maseko.root.absen1",
+            "certificate_hash": "bfe6a9048258509a11c6affc5f8f1a155c4313f5"
+          }
+        },
+        {
+          "client_id": "383684106427-q889nvq937oqval7ag3m4m06n591aiu7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB9ZbuN_YtJ2fNECVqFctO0KfzofS2AW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "383684106427-q889nvq937oqval7ag3m4m06n591aiu7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

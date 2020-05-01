@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.maseko.root.absen1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/damartana"
+        android:roundIcon="@drawable/damartana"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:name=".ContactUsActivity"></activity>
+        <activity android:name=".TentangActivity" />
+        <activity android:name=".DataPerizinanLuarKotaActivity" />
+        <activity android:name=".DataPresensiPegawaiActivity" />
+        <activity android:name=".DataPresensiActivity" />
+        <activity android:name=".NotifPegawaiActivity" />
+        <activity android:name=".MainPegawaiLainActivity" />
+        <activity android:name=".OptionPresensiActivity" />
+        <activity android:name=".NotifActivity" />
+        <activity android:name=".RequestNewPasswordActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity android:name=".SuccessActivity" />
+        <activity android:name=".LoginStepOne" />
+        <activity android:name=".FotoActivity" />
+        <activity android:name=".ScanQrCode" />
+        <activity
+            android:name=".MapsActivity"
+            android:usesCleartextTraffic="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/damartana" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+
+        <service android:name=".Notification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        android:protectionLevel="dangerous" />
+    <uses-permission
+        android:name="com.example.monitoring.permission.MAPS_RECEIVE"
+        android:protectionLevel="dangerous" />
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION"
+        android:protectionLevel="dangerous" />
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS"
+        android:protectionLevel="dangerous" />
+    <uses-permission
+        android:name="android.permission.READ_PROFILE"
+        android:protectionLevel="dangerous" />
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        android:protectionLevel="dangerous" />
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE"
+        android:protectionLevel="dangerous" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:protectionLevel="dangerous" />
+    <uses-permission
+        android:name="android.permission.READ_INTERNAL_STORAGE"
+        android:protectionLevel="dangerous" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:protectionLevel="dangerous" />
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:protectionLevel="dangerous" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        android:protectionLevel="dangerous" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+</manifest>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_white"
+    android:gravity="center"
+    android:padding="16sp">
+
+    <ImageView
+        android:layout_width="103dp"
+        android:layout_height="102dp"
+        android:src="@drawable/damartana" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRESENSI"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/solid_grey"/>
+
+    <GridView
+        android:id="@+id/menuPresensi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:footerDividersEnabled="false"
+        android:numColumns="2"
+        android:padding="1dp"
+       />
+
+</LinearLayout>
